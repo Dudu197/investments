@@ -42,6 +42,8 @@ GEM
       public_suffix (>= 2.0.2, < 5.0)
     arel (8.0.0)
     bindex (0.8.1)
+    bootstrap-generators (3.3.4)
+      railties (>= 3.1.0)
     builder (3.2.4)
     byebug (11.0.1)
     capybara (3.30.0)
@@ -84,6 +86,7 @@ GEM
     mini_mime (1.0.2)
     mini_portile2 (2.4.0)
     minitest (5.13.0)
+    mysql2 (0.5.2)
     nio4r (2.5.2)
     nokogiri (1.10.7)
       mini_portile2 (~> 2.4.0)
@@ -119,6 +122,8 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
+    record_tag_helper (1.0.1)
+      actionview (>= 5)
     regexp_parser (1.6.0)
     ruby_dep (1.5.0)
     rubyzip (2.0.0)
@@ -147,7 +152,6 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    sqlite3 (1.4.2)
     thor (1.0.1)
     thread_safe (0.3.6)
     tilt (2.0.10)
@@ -173,18 +177,20 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap-generators (~> 3.3.4)
   byebug
   capybara (>= 2.15)
   coffee-rails (~> 4.2)
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
+  mysql2
   puma (~> 3.7)
   rails (~> 5.1.7)
+  record_tag_helper (~> 1.0)
   sass-rails (~> 5.0)
   selenium-webdriver
   spring
   spring-watcher-listen (~> 2.0.0)
-  sqlite3
   turbolinks (~> 5)
   tzinfo-data
   uglifier (>= 1.3.0)

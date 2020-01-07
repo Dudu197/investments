@@ -1,0 +1,33 @@
+<div class="page-header">
+  <%= link_to new_me_investment_path, class: 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-plus"></span>
+    New Investment
+  <% end %>
+  <h1>Listing me_investments</h1>
+</div>
+
+<div class="table-responsive">
+  <table class="table table-striped table-bordered table-hover">
+    <thead>
+      <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Obsevation</th>
+            <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <%= content_tag_for(:tr, @me_investments) do |me_investment| %>
+            <td><%= me_investment.name %></td>
+            <td><%= me_investment.description %></td>
+            <td><%= me_investment.obsevation %></td>
+            <td><%= link_to 'Show', me_investment %></td>
+        <td><%= link_to 'Edit', edit_me_investment_path(me_investment) %></td>
+        <td><%= link_to 'Destroy', me_investment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      <% end %>
+    </tbody>
+  </table>
+</div>
